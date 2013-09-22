@@ -10,7 +10,7 @@ Supported Platforms:
 Usage
 -----
 
-Installs Filezilla 3.7.3:
+Install Filezilla 3.7.3:
 
 ```
 class {'filezilla': }
@@ -23,6 +23,18 @@ class {'filezilla':
   version => '3.7.3',
 }
 ```
+
+Choose a specific sourceforge mirror:
+
+Defaults to: Softlayer (Dallas, TX, US)
+
+```
+class {'filezilla':
+  mirror => 'jaist',
+  version => '3.7.3',
+}
+```
+
 
 MIT License
 -----------
