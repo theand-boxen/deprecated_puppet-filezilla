@@ -1,1 +1,1 @@
-include wireshark
+class {'filezilla': }
