@@ -14,11 +14,10 @@ class filezilla::install {
   $mirror = $filezilla::mirror
   $version = $filezilla::version
 
-  $source = $::kernel ? {
+  $source = $::osfamily ? {
     'Darwin' => "http://${mirror}.dl.sourceforge.net/project/filezilla/FileZilla_Client/${version}/FileZilla_${version}_i686-apple-darwin9.app.tar.bz2",
-    default => fail("Unsupported Kernel: ${::kernel} operatingsystem: ${::operatingsystem}")
   }
-  
+
   Exec {
     cwd => '/tmp',
     path => $::path,

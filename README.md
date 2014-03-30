@@ -10,7 +10,7 @@ Supported Platforms:
 Usage
 -----
 
-Install Filezilla 3.7.3:
+Install Filezilla 3.8.0:
 
 ```
 class {'filezilla': }
