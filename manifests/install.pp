@@ -15,7 +15,7 @@ class filezilla::install {
   $version = $filezilla::version
 
   $source = $::osfamily ? {
-    'Darwin' => "http://${mirror}.dl.sourceforge.net/project/filezilla/FileZilla_Client/${version}/FileZilla_${version}_i686-apple-darwin9.app.tar.bz2",
+    'Darwin' => "http://${mirror}.dl.sourceforge.net/project/filezilla/FileZilla_Client/${version}/FileZilla_${version}_macosx-x86.app.tar.bz2",
   }
 
   Exec {
