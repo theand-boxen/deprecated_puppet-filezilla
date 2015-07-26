@@ -1,3 +1,3 @@
 class {'filezilla':
-  version => '3.9.0.6',
+  version => '3.12.0.2',
 }

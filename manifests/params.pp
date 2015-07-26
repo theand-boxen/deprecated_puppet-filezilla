@@ -13,6 +13,6 @@
 class filezilla::params {
 
   $mirror = 'softlayer-dal'
-  $version = '3.8.0'
+  $version = '3.12.0.2'
 
 }
